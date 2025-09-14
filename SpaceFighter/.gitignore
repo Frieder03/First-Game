@@ -1,0 +1,7 @@
+/Library/
+/Logs/
+/Packages/*
+!/Packages/manifest.json
+!/Packages/packages-lock.json
+/Temp/
+/UserSettings/
