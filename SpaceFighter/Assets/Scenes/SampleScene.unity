@@ -179,7 +179,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.584816, y: 10, z: 1}
+  m_LocalScale: {x: 20.431154, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1396686890}
@@ -393,19 +393,19 @@ MonoBehaviour:
   turnSpeed: 720
   passiveBrake: 1
   ThrustAction:
-    m_Name: Thrust
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: c9eaf4bd-c272-4e84-98d7-64f1ab4c8d31
+    m_Id: 915b7fbf-10ef-48cf-a455-42902133b173
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
   MoveAction:
-    m_Name: Move
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 89323f66-a1eb-4cd5-b4f0-23ecf47a8eb1
+    m_Id: c3e8038b-53e4-4dc5-b3ec-275c62100c4d
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -414,7 +414,7 @@ MonoBehaviour:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: e231c05f-6d2b-42e9-854c-d9948bf8d533
+    m_Id: 57193d20-d81e-4555-a7cc-e0c3d5966c03
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -424,10 +424,8 @@ MonoBehaviour:
   dashCooldown: 0.35
   dashInvulnerability: 0.1
   dashEase:
-    serializedVersion: 2
     m_Curve:
-    - serializedVersion: 3
-      time: 0
+    - time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -435,8 +433,7 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    - serializedVersion: 3
-      time: 1
+    - time: 1
       value: 1
       inSlope: 0
       outSlope: 0
@@ -615,7 +612,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.584816, y: 10, z: 1}
+  m_LocalScale: {x: 20.431154, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 397248099}
@@ -631,8 +628,8 @@ GameObject:
   - component: {fileID: 1793122310}
   - component: {fileID: 1793122311}
   - component: {fileID: 1793122312}
-  - component: {fileID: 1793122313}
   - component: {fileID: 1793122314}
+  - component: {fileID: 1793122315}
   m_Layer: 0
   m_Name: Ship_5_0
   m_TagString: Untagged
@@ -740,110 +737,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1793122313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793122309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 898a4aea64335de448eccfc4cfdc6fb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  thrustForce: 2
-  maxSpeed: 2
-  turnSpeed: 360
-  passiveBrake: 2.7
-  ThrustAction:
-    m_Name: Thrust
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6e967d51-9dd1-474f-95e9-9ff4714fc7c5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 83972a75-356b-4ca8-8257-0fbe52f82c93
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Thrust
-      m_Flags: 0
-    m_Flags: 0
-  MoveAction:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e9234cbd-bf75-4069-a76f-5e7a17d2d43e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  DashAction:
-    m_Name: Dash
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7db2501b-41d6-40bc-b2cc-ac1ba8593775
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 1D Axis
-      m_Id: ff8b01c7-aac4-4402-8f5a-d6de0e66dbf4
-      m_Path: 1DAxis
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Dash
-      m_Flags: 4
-    - m_Name: negative
-      m_Id: 8b548644-598c-4a8f-b98e-0d91bcf667a1
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Dash
-      m_Flags: 8
-    - m_Name: positive
-      m_Id: 8161b90b-3642-44d5-889f-113ec8e878ad
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Dash
-      m_Flags: 8
-    m_Flags: 0
-  dashDistance: 4
-  dashTime: 0.12
-  dashCooldown: 0.35
-  dashInvulnerability: 0.1
-  dashEase:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  dashTrail: {fileID: 0}
 --- !u!96 &1793122314
 TrailRenderer:
   serializedVersion: 3
@@ -954,6 +847,86 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1793122315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793122309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f17b2e0c0b2ae5408bfbcf940a3e0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  thrustForce: 12
+  maxSpeed: 10
+  turnSpeed: 720
+  passiveBrake: 1
+  ThrustAction:
+    m_Name: Thrust
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0f87bc60-bdec-40b8-8320-a291e5cbf316
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: a9bd17b3-b1fa-4899-bfbf-2eb8be2ef22c
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Thrust
+      m_Flags: 0
+    m_Flags: 0
+  MoveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 46deb577-c239-4dd9-baa2-3d9bbbfe0e3d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  DashAction:
+    m_Name: Dash
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 81c5001e-ddf5-46cf-8f60-5f04e2e44f6d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  dashDistance: 4
+  dashTime: 0.12
+  dashCooldown: 0.35
+  dashInvulnerability: 0.1
+  dashEase:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dashTrail: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
